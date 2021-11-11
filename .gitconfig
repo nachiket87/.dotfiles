@@ -11,7 +11,7 @@
 
 [core]
   pager = less -FRSX
-	editor = '/usr/local/bin/nvim'
+	editor = nvim
 
 [alias]
   co = checkout
@@ -49,10 +49,8 @@
 [user]
 	email = 33430835+nachiket87@users.noreply.github.com
 	name = Nachiket Pusalkar
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Users/nachiketpusalkar/Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 
+[pull]
+  rebase=false
+[rerere]
+	enabled = true
